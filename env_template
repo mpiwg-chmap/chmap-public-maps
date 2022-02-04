@@ -1,0 +1,9 @@
+# This is your configuration file for all API keys and sensitive data
+# that should NOT be stored in your code repository.
+
+PUBLIC_MAP_API_URL = 'http://localhost/publicMaps.php'
+
+# IIIF_VIEWER_URL = 'http://localhost:8082/index.html?mf=${manifestId}&ci=${canvasId}'
+IIIF_VIEWER_URL = 'http://localhost/mirador/index.html?mf=${manifestId}&ci=${canvasId}'
+
+EXAMPLE_FILES_DIR = 'example-files/'
