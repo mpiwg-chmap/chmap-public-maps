@@ -8,7 +8,7 @@
     <title>CHMap</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <link rel="stylesheet" href="css/index.css" rel="stylesheet" />
-    <script src="./js/chmap-public-maps.js"></script>
+    <script src="js/chmap-public-maps.js"></script>
 </head>
 
 <body>
@@ -33,16 +33,14 @@
                                     <button class="accordion-button default-theme-dark"
                                             type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne">
                                         <i class="bi bi-map me-2"></i>
                                         Public maps
-                                        <i class="bi bi-info-circle ms-2 what-is-public-map"
-                                           title="Public maps"
-                                           data-bs-content="CHMap collects 300+ public maps which..."></i>
                                     </button>
                                 </h2>
                                 <div id="collapseOne"
-                                     class="accordion-collapse"
+                                     class="accordion-collapse show"
                                      aria-labelledby="headingOne">
                                     <div class="accordion-body default-theme-dark">
                                         <ul class="nav nav-pills flex-column mb-auto">
@@ -93,5 +91,5 @@
     </div>
 </div>
 </body>
-<script type="module" src="js/index.js" />
+<script src="js/index.js"></script>
 </html>

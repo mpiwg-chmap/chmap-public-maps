@@ -1,10 +1,7 @@
 
 const L = window.L;
 
-const { PublicMapsController, BootstrapWrap } = window.chmapPublicMaps;
-
-// import { Popover } from '@chmap/utilities/lib/bootstrpWrap';
-
+const { PublicMapsController } = window.chmapPublicMaps;
 
 function initMap() {
 
@@ -44,12 +41,6 @@ function initToolbar(){
 function initSidebar(){
 
     const sidebar = document.getElementById('sidebar');
-
-    //Public maps
-    // new Popover(document.querySelector('.what-is-public-map'), {
-    //     container: 'body',
-    //     trigger: 'hover'
-    // });
 
     PublicMapsController.bindTriggerButtons({
         showAllPublicMapsBtn: sidebar.querySelector('#showAllPublicMapsBtn'),
