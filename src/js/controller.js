@@ -43,7 +43,19 @@ const PublicMapsController = function() {
             IIIFViewer.open(params);
         });
 
-        publicMapsPanel.on('shown', Spinner.hide);
+        publicMapsPanel.on('shown', (offCanvasDom) => {
+
+            Spinner.hide();
+
+            localEventEmitter.emit('panel.shown', offCanvasDom);
+
+        });
+
+        publicMapsPanel.on('hidden', (offCanvasDom) => {
+
+            localEventEmitter.emit('panel.hidden', offCanvasDom);
+
+        });
 
         publicMapsPanel.on('exception', async (info) => {
 
@@ -193,11 +205,13 @@ const PublicMapsController = function() {
 
     /* Events
 
-    { name: 'addIntoYourLayer', params: layers-Array );
+    { name: 'addIntoYourLayer', params: layers-Array )
     { name: 'filteringModeStart', params: filteringMode:String }
     { name: 'filteringModeStop', params: filteringMode:String }
     { name: 'placeNameSearchStart', params: null }
     { name: 'placeNameSearchEnd', params: null }
+    { name: 'panel.shown', params: offcanvasDom-Object }
+    { name: 'panel.hidden', params: offcanvasDom-Object }
 
     */
 

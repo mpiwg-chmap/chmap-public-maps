@@ -103,8 +103,15 @@ const PublicMapsPanel = function() {
         //keep panelBody pointer
         panelBody = offCanvasDom.querySelector('.offcanvas-body');
 
+        // offCanvasDom.addEventListener('shown.bs.offcanvas', () => {
+        //     localEventEmitter.emit('shown', offCanvasDom);
+        // });
+
         //bind closed event for clearing
-        offCanvasDom.addEventListener('hidden.bs.offcanvas', clearResources);
+        offCanvasDom.addEventListener('hidden.bs.offcanvas', () => {
+            clearResources();
+            localEventEmitter.emit('hidden', offCanvasDom);
+        });
 
         //bind save button's click event
         offCanvasDom.querySelector('.save-btn').onclick = saveLayers;
@@ -116,7 +123,7 @@ const PublicMapsPanel = function() {
 
         panel.show();
 
-        localEventEmitter.emit('shown', '');
+        localEventEmitter.emit('shown', panel._element);
 
     }
 
@@ -424,6 +431,9 @@ const PublicMapsPanel = function() {
     /* Events
 
     { name: 'addIntoYourLayer', params: layers-Array }
+    { name: 'shown', params: panelDom-Object }
+    { name: 'hidden', params: panelDom-Object }
+    { name: 'showIIIFViewer', params: ifffBtnParams-Json }
     { name: 'exception', params: msg-String }
 
     */
