@@ -1,7 +1,7 @@
 {
   "name": "@chmap/public-maps",
   "version": "1.0.0",
-  "description": "",
+  "description": "The floating panel for public maps which the CHAmp project collected. Users can filter them by a geo-coordinate and preview a public map on the leaflet map component. Additionally, users could add them into the leaflet-layers-panel.",
   "lib-main": "lib/js/index.js",
   "main": "dis/js/index.js",
   "module": "src/js/index.js",
@@ -13,9 +13,13 @@
     "lib": "npm run clean:lib && babel src --out-dir lib --copy-files",
     "clean:lib": "rm -rf lib && mkdir lib"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "gis",
+    "map",
+    "leaflet"
+  ],
+  "author": "calvin yeh",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.16.7",
     "@babel/runtime-corejs3": "^7.16.8",
