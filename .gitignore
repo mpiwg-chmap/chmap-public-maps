@@ -9,3 +9,7 @@ dist
 
 # IDE directory
 .idea
+
+package-lock.json
+yarn-error.log
+yarn.lock
