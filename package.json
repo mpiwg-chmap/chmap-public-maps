@@ -19,7 +19,7 @@
     "leaflet"
   ],
   "author": "calvin yeh",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "dependencies": {
     "@babel/runtime": "^7.16.7",
     "@babel/runtime-corejs3": "^7.16.8",
