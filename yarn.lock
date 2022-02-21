@@ -924,10 +924,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@chmap/leaflet-extensions@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@chmap/leaflet-extensions/-/leaflet-extensions-1.0.1.tgz#5cfa05f6a964d039edd3776faf90216deca712fe"
-  integrity sha512-RlNsmcmEfKKZFVMLCc8BYSMJkpYohHnxARVSRI+6aehlGYw4fE7hYiZ431VcVXu9YW/X4uuOYSWIMI0GG3np4w==
+"@chmap/leaflet-extensions@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@chmap/leaflet-extensions/-/leaflet-extensions-1.0.3.tgz#cc155d0755e7809a8fa8e54a8c4e239e43ca8327"
+  integrity sha512-VN1c4GMSatmK1/XkYQJK/5h3GuuwO9ST8Ij1v+oiEMeYMfX6oeaYWE1sWQW8+yXuxw5Dw1xR11sJxCvoHai7Kg==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@babel/runtime-corejs3" "^7.16.8"
@@ -936,10 +936,10 @@
     leaflet "^1.7.1"
     leaflet-distortableimage "^0.21.7"
 
-"@chmap/utilities@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@chmap/utilities/-/utilities-1.0.1.tgz#a1bc38c54161fa7972afd66f9f903c5035d052bc"
-  integrity sha512-Z0mJYpC9T8C5iXNrt/aV5u1aOd4kU+zVFjwWvk12NuOk/KqBJrgVslhuoisNpYJcZryJZc/KCHSnxobEE2huKg==
+"@chmap/utilities@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@chmap/utilities/-/utilities-1.0.2.tgz#a8afabd482b1108094c5a2784719db549f6c80ff"
+  integrity sha512-VB5cSO2ZAS5Fa+asKiQNNT9vfee8pNZr2wTSZ4RrhHSn1Ur4j77LePkf4WNmtV1weyrYIw06TogKZwjN8VdBiw==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@babel/runtime-corejs3" "^7.16.8"
