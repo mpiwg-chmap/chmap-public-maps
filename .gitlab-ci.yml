@@ -1,0 +1,9 @@
+pages:
+  stage: deploy
+  script:
+    - echo "Do Nothing!"
+  artifacts:
+    paths:
+      - example
+  only:
+    - master
