@@ -4,7 +4,7 @@ This project provides a list that contains 300+ public maps collected by CHMap p
 
 ## Demos
 
-- [example](http://www.github.io/chmap/public-maps/example)
+After you downloaded or cloned the project, you can open index.html under the example folder.
 
 ## Getting Started
 
